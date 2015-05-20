@@ -1,0 +1,390 @@
+/*
+* The Glen Project 
+* Copyright 2015, Glen Inocencio
+* 5/10/2015
+*/
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Global Elements
+- Navigation
+- Landing Page Content 
+- Biography
+- Work
+- Contact
+
+*/
+
+/* Global Elements
+––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+
+html, body{
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.75em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "museo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222; }
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-family: "verlagbold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+h2 {font-size: 2.827em;}
+
+h3 {font-size: 1.999em;
+  
+}
+
+h4 {font-size: 1.414em;}
+
+ul, li {
+  text-decoration: none;
+}
+
+li {
+  display: inline-block; 
+}
+
+a {
+  text-decoration: none;
+  color: #000 !important;
+}
+
+a:hover {
+  color: #FF0000 !important;
+}
+
+img{
+  width: 100%;
+}
+
+blockquote {
+  font-size: 21px;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.relative{
+  position: relative;
+}
+
+nav {
+  font-family: "verlagbold", "HelveticaNeue", "Helvetica" !important; 
+}
+
+.btn {
+  border: 3px solid black;
+  color: #000;
+  display: inline-block;
+  padding: 5px;
+  font-family: "verlagbold", "HelveticaNeue", "Helvetica";
+}
+
+.btn:hover {
+  color: #FF0000;
+  border: 3px solid #FF0000;
+  padding: 5px;
+}
+
+.img-test{
+  background-color: #CCCCCC;
+  width: 100%;
+  overflow: hidden;
+}
+
+.big{
+  height: 500px;
+  overflow: hidden;
+}
+
+.small{
+  height: 230px;
+  margin-bottom: 4.2%;
+  overflow: hidden;
+}
+
+/*  Navigation
+________________________________________________________________
+*/
+
+.logo{
+  background: transparent url('../images/logo.png') no-repeat left center;
+  background-size: 100%;
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+  text-indent: -99999px;
+  margin-left: 10px;
+}
+
+nav {
+  font-family: Helvetica;
+}
+
+.right_nav {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.right_nav a {
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+} 
+
+/*  Landing Page
+________________________________________________________________
+*/
+
+.hero_image {
+  background: white url("../images/class.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+  height: 800px; 
+  margin-top: 10px;
+}
+
+.main_title {
+  margin-top: 10px;
+  color: #fff;
+  line-height: 80px;
+  margin-top: -400px;
+  background-color: rgba(255, 0, 0, 0.5);
+  height: 700px;
+  margin-left: 10px;
+  font-size: 100px;
+}
+
+.main_nav_links {
+  margin-top: 10px;
+}
+
+.hero_vertical_box {
+  background: #fff;
+  height: 600px;
+  width: 10px;
+}
+
+.black_underline_box_experiment {
+ background-color: black; 
+ width: 265px;
+ height: 10px; 
+ margin-top: -15px;
+}
+
+.black_underline_box_work {
+ background-color: black; 
+ width: 165px;
+ height: 10px; 
+ margin-top: -15px;
+}
+
+.work_box_overlay {
+  background-color: rgba(255,0,0,0.5);
+  position: absolute;
+  width: 325px;
+  height: 400px;
+}
+
+.gallery_box_overlay {
+  background-color: rgba(255,0,0,0.5);
+  position: absolute;
+  width: 100%;
+  max-height: 480px;
+  height: 100%;
+}
+
+.gallery {
+  margin-top: 200px;
+  position: relative;
+}
+
+.btn-gallery{
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  text-align: center;
+  width: 200px;
+}
+
+/*  Biography
+________________________________________________________________
+*/
+
+.black_underline_box_story {
+ background-color: black; 
+ width: 167px;
+ height: 10px; 
+ margin-top: -15px;
+}
+
+
+.bio_image {
+  background: white url("../images/glen.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+  height: 500px; 
+  margin-top: 10px;
+}
+
+.bio_vertical_box {
+  background-color: rgba(255,0,0,0.5);
+  position: absolute;
+  width: 300px;
+  height: 500px;
+}
+
+.bio_vertical_box2 {
+  background-color: rgba(255,0,0,0.5);
+  position: absolute;
+  width: 50px;
+  height: 500px;
+}
+
+.bio_vertical_box3 {
+  background-color: rgba(255,0,0,0.5);
+  position: absolute;
+  width: 10px;
+  height: 500px;
+}
+
+.story_lead_paragraph {
+  font-size: 24px;
+}
+
+/*  Work
+________________________________________________________________
+*/
+
+
+.black_underline_box_work {
+ background-color: black; 
+ width: 167px;
+ height: 10px; 
+ margin-top: -15px;
+}
+
+.gallery_first_row {
+  margin-top: 100px;
+}
+
+.biggie {
+  background-image: url('../images/biggie.png');
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+}
+
+.girl_closeup {
+  background-image: url('../images/girl_closeup.png');
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
+}
+
+.girl_back {
+  background-image: url('../images/girl_back.png');
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Footer
+________________________________________________________________
+*/
+
+footer {
+  margin-top: 150px;
+  background-color: #d3d3d3;
+  padding: 10px;
+  height: 150px;
+}
+
+.footer_title {
+  float: left;
+}
+
+.social_media_icons {
+  margin-top: 25px;
+  text-align: right;
+  
+}
+
+.facebook {
+  background-image: url('../images/social_media.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 53px;
+  width: 54px;
+}
+
+.twitter {
+  background-image: url('../images/social_media.png');
+  background-repeat: no-repeat;
+  background-position: -62px 0;
+  height: 53px;
+  width: 54px;
+}
+
+.google_plus {
+  background-image: url('../images/social_media.png');
+  background-repeat: no-repeat;
+  background-position: -128px 0;
+  height: 53px;
+  width: 54px;
+}
+
+.bio_footer {
+  margin-top: 900px;
+  background-color: #d3d3d3;
+  padding: 10px;
+  height: 150px;
+}
+
+
+
+
