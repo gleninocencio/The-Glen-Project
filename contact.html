@@ -17,7 +17,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-   <!-- CSS
+     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fonts.css">
@@ -38,54 +38,32 @@
       <div class="right_nav">
         <div class="ten columns">
           <ul class="main_nav_links">
-           <li><a href="gallery.html">Work</a></li>
-           <li><a href="bio.html">About</a></li>
-           <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Work</a></li>
+            <li><a href="bio.html">About</a></li>
+            <li><a href="#">Contact</a></li>
           </ul> 
       </div>  
     </nav>
      <div class="container"> 
       <div class="row">
-        <div class="three columns">
-          <h3>MY WORK</h3>
+        <div class="four columns">
+          <h3>CONTACT</h3>
            <div class="black_underline_box_work"></div>
         </div>
        </div>   
      </div>
-    <div class="container work">
-      <div class="row">
-        <div class="eight columns big_box">
-          <a href="view_item_biggie.html"><img src="images/biggie.jpg" class="img-test"></a>  
-        </div>
-        <div class="four columns small_box">
-          <a href="view_item_girl_closeup.html"><img src="images/girl_closeup.jpg" class="img-test"></a>
-        </div>
-        <div class="four columns small_box">
-          <a href="#"><img src="images/thinker.jpg" class="img-test"></a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="eight columns big_box">
-          <a href="#"><img src="images/bill_murray.jpg" class="img-test"></a>
-        </div>
-        <div class="four columns small_box">
-          <a href="#"><img src="images/girl_sitting.jpg" class="img-test"></a>
-        </div>
-        <div class="four columns small_box">
-          <a href="#"><img src="images/girl_lying.jpg" class="img-test"></a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="eight columns big_box">
-          <a href="#"><img src="images/bowie.jpg" class="img-test"></a>
-        </div>
-        <div class="four columns small_box">
-          <a href="#"><img src="images/girl_back.jpg" class="img-test"></a>
-        </div>
-        <div class="four columns small_box">
-          <a href="#"><img src="images/girl_pink.jpg" class="img-test"></a>
-        </div>
-      </div>
+    <div class="container contact">
+      <div class="row six columns">
+        <form class="signup-form" id="signup-form" role="form" onsubmit="return signup(this)" method="post">
+          <label>Name</label>
+          <input class="form-control" name="name" type="name" size="50" placeholder="Your name" required>
+          <label>Email</label>
+          <input class="form-control" name="email" type="email" size="50" placeholder="Enter email" required>
+          <label>Message</label>
+          <textarea id="message" name="message" cols="3" rows="8" placeholder="Enter message"></textarea>
+          <input type="submit" value="Submit" class="btn btn-contact">
+        </form> 
+      </div>  
     </div>
 
     <footer class="row">

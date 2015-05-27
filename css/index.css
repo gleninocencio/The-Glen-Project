@@ -12,7 +12,6 @@
 - Landing Page Content 
 - Biography
 - Work
-- View Item
 - Contact
 
 */
@@ -109,6 +108,18 @@ nav {
 .img-test{
   background-color: #CCCCCC;
   width: 100%;
+  overflow: hidden;
+}
+
+.big{
+  background-position: -128px 0;
+  height: 500px;
+  overflow: hidden;
+}
+
+.small{
+  height: 230px;
+  margin-bottom: 4.2%;
   overflow: hidden;
 }
 
@@ -245,24 +256,21 @@ ________________________________________________________________
 .bio_vertical_box {
   background-color: rgba(255,0,0,0.5);
   position: absolute;
-  left: -2%;
-  width: 25%;
+  width: 300px;
   height: 500px;
 }
 
 .bio_vertical_box2 {
   background-color: rgba(255,0,0,0.5);
   position: absolute;
-  left: 2%;
-  width: 5%;
+  width: 50px;
   height: 500px;
 }
 
 .bio_vertical_box3 {
   background-color: rgba(255,0,0,0.5);
   position: absolute;
-  left: 5%;
-  width: 1%;
+  width: 10px;
   height: 500px;
 }
 
@@ -274,6 +282,7 @@ ________________________________________________________________
 ________________________________________________________________
 */
 
+
 .black_underline_box_work {
  background-color: black; 
  width: 167px;
@@ -281,59 +290,49 @@ ________________________________________________________________
  margin-top: -15px;
 }
 
-.big_box{
-  height: 500px;
-  overflow: hidden;
+.gallery_first_row {
+  margin-top: 100px;
 }
 
-.small_box{
-  height: 230px;
-  margin-bottom: 4.2%;
-  overflow: hidden;
+.biggie {
+  background-image: url('../images/biggie.png');
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
 }
 
-.work {
-  margin-top: 25px;
+.girl_closeup {
+  background-image: url('../images/girl_closeup.png');
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
 }
 
-/*  View Item
-________________________________________________________________
-*/
-.view-work{
-  margin-top: 25px;
+.girl_back {
+  background-image: url('../images/girl_back.png');
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
 }
 
-.view-item_box{
-  height: 900px;
-  overflow: hidden;
-}
 
-.item-description {
-  margin-top: -40px;
-}
 
-/*  Contact
-________________________________________________________________
-*/
 
-.contact {
-  margin-top: 25px;
-}
 
-.btn-contact{
-   width: 200px;
-   margin-top: 50px;
-}
 
-.form-control {
-  padding: 5px;
-}
 
-textarea {
-    display: block;
-    width: 100%;
-    height: 100px;        
-  }      
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  Footer
 ________________________________________________________________
@@ -353,6 +352,7 @@ footer {
 .social_media_icons {
   margin-top: 25px;
   text-align: right;
+  
 }
 
 .facebook {
