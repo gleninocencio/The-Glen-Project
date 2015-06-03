@@ -92,7 +92,8 @@ nav {
   font-family: "verlagbold", "HelveticaNeue", "Helvetica" !important; 
 }
 
-.btn {
+.btn,
+input[type='submit'] {
   border: 3px solid black;
   color: #000;
   display: inline-block;
@@ -112,6 +113,47 @@ nav {
   overflow: hidden;
 }
 
+.arrow{
+  height: 50px;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: auto;
+}
+
+@media(max-width: 550px){
+  .arrow{
+    height: 25px;
+  }
+
+}
+
+
+.arrow:hover{
+  opacity: 0.5;
+}
+
+.arrow-right{
+  right: 0;
+  top: 50%;
+}
+
+.arrow-left{
+  left: 0;
+  -webkit-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -o-transform:rotate(180deg);
+  transform:rotate(180deg);
+  top: 50%;
+}
+
+.img-swap img:last-child{display:none}
+.img-swap:hover img:first-child{display:none}
+.img-swap:hover img:last-child{display:inline-block}
+
+
 /*  Navigation
 ________________________________________________________________
 */
@@ -126,20 +168,73 @@ ________________________________________________________________
   margin-left: 10px;
 }
 
-nav {
-  font-family: Helvetica;
+.right_nav li {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.right_nav li:last-child{ margin-right: 0; }
+
+.right_nav a { color: #FFF; }
+
+.right_nav a:hover {
+  color: #FF0000;
 }
 
 .right_nav {
+  display: none;
   text-align: right;
-  margin-top: 10px;
+  margin-left: 10px;
 }
 
-.right_nav a {
-  margin-right: 10px;
-  margin-top: 10px;
-  display: inline-block;
-} 
+@media(min-width: 550px){
+  .right_nav{
+    display: block;
+  }
+}
+
+
+.right_nav.mobile-nav-open{
+  display: block;
+  background-color: #FFFFFF;
+}
+
+.right_nav.mobile-nav-open ul{
+  background-color: rgba(255,255,255,0.50);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 200px;
+}
+
+.right_nav.mobile-nav-open li{
+  display: block;
+  text-align: left;
+  border: none;
+}
+
+.right_nav.mobile-nav-open li a{
+  color: #3d0b34;
+  border: none;
+  padding: 5px;
+
+}
+
+.right_nav.mobile-nav-open li a:hover {
+  color: #FF0000;
+}
+
+.right_nav.mobile-nav-open li.btn {
+  color: #FF0000;
+  border: none;
+}
+
+/* Show Mobile Class */
+@media(max-width: 550px){ .show-mobile{ display: block; float: right; } }
+@media(min-width: 551px){ .show-mobile{ display: none; } }
+
+@media(max-width: 550px){ .hide-mobile{ display: none; } }
 
 /*  Landing Page
 ________________________________________________________________
@@ -242,6 +337,19 @@ ________________________________________________________________
   margin-top: 10px;
 }
 
+@media(max-width: 550px) {
+   .bio_image {
+      background: white url("../images/glen_red.jpg") no-repeat center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      position: relative;
+      height: 500px; 
+      margin-top: 10px;
+      }
+}
+
+
 .bio_vertical_box {
   background-color: rgba(255,0,0,0.5);
   position: absolute;
@@ -292,6 +400,20 @@ ________________________________________________________________
   overflow: hidden;
 }
 
+.big_box2{
+  height: 500px;
+  overflow: hidden;
+  float: right;
+}
+
+.small_box2{
+  height: 230px;
+  margin-bottom: 4.2%;
+  overflow: hidden;
+  float: left;
+  margin-left: 0%;
+}
+
 .work {
   margin-top: 25px;
 }
@@ -308,6 +430,12 @@ ________________________________________________________________
   overflow: hidden;
 }
 
+@media(max-width: 550px) {
+  .view-item_box {
+  height: 100%;
+  }
+}
+
 .item-description {
   margin-top: -40px;
 }
@@ -321,8 +449,16 @@ ________________________________________________________________
 }
 
 .btn-contact{
+   text-align: center;
    width: 200px;
    margin-top: 50px;
+   background-color: #fff;
+}
+
+.btn-contact:hover{
+  color: #FF0000;
+  border: 3px solid #FF0000 !important;
+  padding: 5px;
 }
 
 .form-control {
@@ -346,9 +482,9 @@ footer {
   height: 150px;
 }
 
-.footer_title {
+/*.footer_title {
   float: left;
-}
+}*/
 
 .social_media_icons {
   margin-top: 25px;
@@ -386,6 +522,19 @@ footer {
   height: 150px;
 }
 
+@media(max-width: 550px) {
 
+    .footer_title {
+      display: block;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .social_media_icons {
+      text-align: center;
+
+    }
+}
 
 
