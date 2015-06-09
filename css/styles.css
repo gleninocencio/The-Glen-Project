@@ -89,7 +89,8 @@ blockquote {
 }
 
 nav {
-  font-family: "verlagbold", "HelveticaNeue", "Helvetica" !important; 
+  font-family: "verlagbold", "HelveticaNeue", "Helvetica" !important;
+  padding: 10px; 
 }
 
 .btn,
@@ -166,6 +167,10 @@ ________________________________________________________________
   height: 60px;
   text-indent: -99999px;
   margin-left: 10px;
+}
+
+.nav_links {
+  z-index: 99999;
 }
 
 .right_nav li {
@@ -301,7 +306,7 @@ ________________________________________________________________
 }
 
 .gallery {
-  margin-top: 200px;
+  margin-top: 10%;
   position: relative;
 }
 
@@ -314,6 +319,26 @@ ________________________________________________________________
   text-align: center;
   width: 200px;
 }
+
+@media(max-width: 550px) {
+
+  .work_box_overlay {
+    background-color: rgba(255,0,0,0.5);
+    position: absolute;
+    width: 50%;
+    height: 100%;
+  }
+
+  .gallery_box_overlay {
+    background-color: rgba(255,0,0,0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+
 
 /*  Biography
 ________________________________________________________________
@@ -390,17 +415,26 @@ ________________________________________________________________
 }
 
 .big_box{
-  height: 500px;
+  height: auto;
+  margin-bottom: 4%;
   overflow: hidden;
 }
 
 .small_box{
-  height: 230px;
-  margin-bottom: 4.2%;
+  height: auto;
+  margin-bottom: 4%;
   overflow: hidden;
 }
 
-.big_box2{
+@media(max-width: 550px) {
+  .big_box{
+    height: 500px;
+    margin-bottom: -40%;
+    overflow: hidden;
+  }
+}
+
+/*.big_box2{
   height: 500px;
   overflow: hidden;
   float: right;
@@ -412,7 +446,7 @@ ________________________________________________________________
   overflow: hidden;
   float: left;
   margin-left: 0%;
-}
+}*/
 
 .work {
   margin-top: 25px;
@@ -533,8 +567,38 @@ footer {
 
     .social_media_icons {
       text-align: center;
-
     }
+
+    .facebook {
+      background-image: url('../images/social_media.png');
+      background-repeat: no-repeat;
+      background-position: 21px 0;
+      height: 53px;
+      width: 54px;
+      background-size: 250%;
+    }
+
+    .twitter {
+      background-image: url('../images/social_media.png');
+      background-repeat: no-repeat;
+      background-position: -62px 0;
+      height: 53px;
+      width: 54px;
+      background-size: 250%;
+    }
+
+    .google_plus {
+      background-image: url('../images/social_media.png');
+      background-repeat: no-repeat;
+      background-position: -128px 0;
+      height: 53px;
+      width: 54px;
+      background-size: 250%;
+    }
+
+
+
+
 }
 
 
