@@ -55,28 +55,19 @@
      </div>
     <div class="container contact">
       <div class="row six columns">
-
-
             <p id="signup-success" class="text-success"></p>
             <p id="signup-error" class="text-danger"></p>
-
-        <form class="signup-form" id="signup-form" role="form" onsubmit="return signup(this)" method="post">
-
-           
+        <form class="signup-form" id="signup-form" role="form" onsubmit="return signup(this)" method="Post">
             <label>Name</label>
             <input class="form-control" name="name" type="name" placeholder="Your name" required>
-            
             <label>Email</label>
             <input class="form-control" name="email" type="email" placeholder="Enter email" required>
-            
             <label>Message</label>
             <textarea id="message" name="message" cols="5" rows="3" placeholder="Enter message"></textarea>
-         
             <input type="submit" value="Submit" class="btn btn-contact" id="signup-button">
         </form>
       </div>  
     </div>
-
     <footer class="row">
       <div class="seven columns">
         <h4 class="footer_title">THE GLEN PROJECT</h4>
@@ -104,11 +95,9 @@
           signupForm.style.display = 'none';
         }
       };
-
-
       function signup(formObj) {
           // Store emails to firebase
-          var myFirebaseRef = new Firebase("https://the-glen-project.firebaseIO.com");
+          var myFirebaseRef = new Firebase("https://gingado.firebaseIO.com");
           myFirebaseRef.push({
             email: formObj.email.value,
             name: formObj.name.value,
@@ -118,10 +107,12 @@
           signupBtn.disabled = true;
           return false;
       }
-      </script>
+    </script>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/mobile-menu.js"></script>     
 
 
