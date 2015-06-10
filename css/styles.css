@@ -429,7 +429,7 @@ ________________________________________________________________
 @media(max-width: 550px) {
   .big_box{
     height: 500px;
-    margin-bottom: -40%;
+    margin-bottom: 4%;
     overflow: hidden;
   }
 }
