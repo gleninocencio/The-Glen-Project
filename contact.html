@@ -57,7 +57,8 @@
       <div class="row six columns">
             <p id="signup-success" class="text-success"></p>
             <p id="signup-error" class="text-danger"></p>
-        <form class="signup-form" id="signup-form" role="form" onsubmit="return signup(this)" method="Post">
+        <form class="signup-form" id="signup-form" role="form" action="https://formkeep.com/f/e35869317d21" method="POST">
+            <input type="hidden" name="utf8" value="✓">
             <label>Name</label>
             <input class="form-control" name="name" type="name" placeholder="Your name" required>
             <label>Email</label>
@@ -83,35 +84,6 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/mobile-menu.js"></script>     
-
-    <script>
-      var signupForm = document.getElementById('signup-form');
-      var signupSuccess = document.getElementById('signup-success');
-      var signupError = document.getElementById('signup-error');
-      var signupBtn = document.getElementById('signup-button');
-      var onSignupComplete = function(error) {
-        signupBtn.disabled = false;
-
-        if (error) {
-          signupError.innerHTML = 'Sorry. Could not signup.';
-        } else {
-          signupSuccess.innerHTML = 'Thanks for signing up!';
-          // hide the form
-          signupForm.style.display = 'none';
-        }
-      };
-      function signup(formObj) {
-          // Store emails to firebase
-          var myFirebaseRef = new Firebase("https://the-glen-project.firebaseio.com/");
-          myFirebaseRef.push({
-            email: formObj.email.value,
-            name: formObj.name.value,
-            message: formObj.message.value,
-          }, onSignupComplete);
-          signupBtn.disabled = true;
-          return false;
-      }
-    </script>
 
   </body>
   </html>
