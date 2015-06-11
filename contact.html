@@ -102,7 +102,7 @@
       };
       function signup(formObj) {
           // Store emails to firebase
-          var myFirebaseRef = new Firebase("https://gingado.firebaseIO.com");
+          var myFirebaseRef = new Firebase("https://the-glen-project.firebaseio.com/");
           myFirebaseRef.push({
             email: formObj.email.value,
             name: formObj.name.value,
