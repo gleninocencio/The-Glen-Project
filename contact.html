@@ -79,6 +79,11 @@
       </ul>
     </footer>  
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mobile-menu.js"></script>     
+
     <script>
       var signupForm = document.getElementById('signup-form');
       var signupSuccess = document.getElementById('signup-success');
@@ -102,19 +107,11 @@
             email: formObj.email.value,
             name: formObj.name.value,
             message: formObj.message.value,
-
           }, onSignupComplete);
           signupBtn.disabled = true;
           return false;
       }
     </script>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/mobile-menu.js"></script>     
-
 
   </body>
   </html>
