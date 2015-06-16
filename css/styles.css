@@ -258,10 +258,10 @@ ________________________________________________________________
 .main_title {
   margin-top: 10px;
   color: #fff;
-  line-height: 80px;
-  margin-top: -400px;
+  line-height: 70px;
+  margin-top: -265px;
   background-color: rgba(255, 0, 0, 0.5);
-  height: 700px;
+  height: 575px;
   margin-left: 10px;
   font-size: 100px;
 }
@@ -272,7 +272,7 @@ ________________________________________________________________
 
 .hero_vertical_box {
   background: #fff;
-  height: 600px;
+  height: 550px;
   width: 10px;
 }
 
@@ -322,6 +322,20 @@ ________________________________________________________________
 
 @media(max-width: 550px) {
 
+  .hero_image {
+    
+  }
+
+  .main_title {
+    font-size: 4.999em;
+    line-height: 59px;
+    margin-top: -232px;
+  }
+
+  .hero_vertical_box {
+    height: 475px;
+  }
+
   .work_box_overlay {
     background-color: rgba(255,0,0,0.5);
     position: absolute;
@@ -334,6 +348,11 @@ ________________________________________________________________
     position: absolute;
     width: 100%;
     height: 100%;
+  }
+
+  .btn-gallery{
+    top: 34%;    
+    width: 130px;
   }
 
 }
@@ -362,19 +381,6 @@ ________________________________________________________________
   margin-top: 10px;
 }
 
-@media(max-width: 550px) {
-   .bio_image {
-      background: white url("../images/glen_red.jpg") no-repeat center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      position: relative;
-      height: 500px; 
-      margin-top: 10px;
-      }
-}
-
-
 .bio_vertical_box {
   background-color: rgba(255,0,0,0.5);
   position: absolute;
@@ -401,7 +407,29 @@ ________________________________________________________________
 
 .story_lead_paragraph {
   font-size: 24px;
+  padding: 20px;
 }
+
+.bio_content {
+  padding: 20px;
+}
+
+@media(max-width: 550px) {
+   .bio_image {
+      background: white url("../images/glen_red.jpg") no-repeat center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      position: relative;
+      height: 500px; 
+      margin-top: 10px;
+      }
+
+    .bio-title {
+      margin-left: 20px;
+    }  
+}
+
 
 /*  Work
 ________________________________________________________________
@@ -432,20 +460,6 @@ ________________________________________________________________
     overflow: hidden;
   }
 }
-
-/*.big_box2{
-  height: 500px;
-  overflow: hidden;
-  float: right;
-}
-
-.small_box2{
-  height: 230px;
-  margin-bottom: 4.2%;
-  overflow: hidden;
-  float: left;
-  margin-left: 0%;
-}*/
 
 .work {
   margin-top: 25px;
@@ -515,37 +529,9 @@ footer {
   height: 150px;
 }
 
-/*.footer_title {
-  float: left;
-}*/
-
 .social_media_icons {
   margin-top: 25px;
   text-align: right;
-}
-
-.facebook {
-  background-image: url('../images/social_media.png');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  height: 53px;
-  width: 54px;
-}
-
-.twitter {
-  background-image: url('../images/social_media.png');
-  background-repeat: no-repeat;
-  background-position: -62px 0;
-  height: 53px;
-  width: 54px;
-}
-
-.google_plus {
-  background-image: url('../images/social_media.png');
-  background-repeat: no-repeat;
-  background-position: -128px 0;
-  height: 53px;
-  width: 54px;
 }
 
 .bio_footer {
@@ -566,38 +552,17 @@ footer {
 
     .social_media_icons {
       text-align: center;
+      margin-top: 0%;
     }
 
-    .facebook {
-      background-image: url('../images/social_media.png');
-      background-repeat: no-repeat;
-      background-position: 21px 0;
-      height: 53px;
-      width: 54px;
-      background-size: 250%;
+    .facebook, .twitter, .google_plus{
+      width: 10%;
     }
 
-    .twitter {
-      background-image: url('../images/social_media.png');
-      background-repeat: no-repeat;
-      background-position: -62px 0;
-      height: 53px;
-      width: 54px;
-      background-size: 250%;
+    .bio_footer {
+      margin-top: 265%;
     }
 
-    .google_plus {
-      background-image: url('../images/social_media.png');
-      background-repeat: no-repeat;
-      background-position: -128px 0;
-      height: 53px;
-      width: 54px;
-      background-size: 250%;
-    }
-
-
-
-
-}
+   }
 
 
